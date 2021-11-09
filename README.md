@@ -20,4 +20,10 @@ nebolo mozne stiahnut data z akcii BRK.B, HD
 
 Zoznam akcii ktore chceme pouzit: 'GOOG', 'SPG', 'GOOGL', 'MSFT', 'GD', 'ACN', 'COP', 'F', 'BAC', 'GS',
        'NVDA', 'AIG', 'MS', 'WFC', 'ORCL', 'XOM', 'TGT', 'LOW', 'EXC', 'COST',
-       'AXP', 'BK', 'JPM', 'COF', 'CSCO', 'DHR', 'UNH', 'CVS', 'LLY', 'CVX'
+       'AXP', 'BK', 'JPM', 'COF', 'CSCO', 'DHR', 'UNH', 'CVS', 'LLY', 'CVX',
+       'MET', 'AMT', 'CRM', 'BLK', 'RTX', 'MCD', 'TMO', 'LIN', 'ADBE', 'EMR',
+       'USB', 'UPS', 'TSLA', 'PFE', 'PM'
+
+Rozdelenie vybratych aktiv podla sektorov:
+![alt text](stocks_per_sector.png "rozdelenie aktiv")
+Kedze ziadny sektor nieje priliz dominantny tak sme boli spokojny s vyberom aktiv
