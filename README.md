@@ -27,3 +27,5 @@ Zoznam akcii ktore chceme pouzit: 'GOOG', 'SPG', 'GOOGL', 'MSFT', 'GD', 'ACN', '
 Rozdelenie vybratych aktiv podla sektorov:
 ![alt text](stocks_per_sector.png "rozdelenie aktiv")
 Kedze ziadny sektor nieje priliz dominantny tak sme boli spokojny s vyberom aktiv
+
+### Rozdelenie aktiv: Markowitz
