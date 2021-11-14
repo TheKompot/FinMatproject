@@ -26,6 +26,24 @@ Zoznam akcii ktore chceme pouzit: 'GOOG', 'SPG', 'GOOGL', 'MSFT', 'GD', 'ACN', '
 
 Rozdelenie vybratych aktiv podla sektorov:
 ![alt text](stocks_per_sector.png "rozdelenie aktiv")
+
 Kedze ziadny sektor nieje priliz dominantny tak sme boli spokojny s vyberom aktiv
 
 ### Rozdelenie aktiv: Markowitz
+
+Na tvorbu prveho portfolia sme pouzili markowitzov problem avsak formulovany ako minimalizacia Sharpe ratio
+* kapital nam rozdelilo iba do 17 akcii
+* preto sme zmenili ohranicenia vah na interval od 0.01 do 1
+* **Rocny vynos: 55.37%**
+* **Rocna volatilila: 12.49%** 
+
+Vyskusali sme pridat ohranicenie ze do 17 akcii ktore si najprv "vybral" model moze ist max 80% kapitalu, avsak pocet pouzitych akcii sa znizil 
+
+**TODO**
+* plotovat rozdelenie vah na sektory
+* ak by sme neboli spokojny vytvorit ohranicenia na sektory (vyskusat aj pre vahy z intervalu 0,1)
+* otestovat portfolio na novych datach
+
+### Rozdelenie aktiv: K-Means:
+
+Na tvorbu drueho portfolia chceme pouzit ML algoritmus, ktory nam zgrupi akcie do roznych skupin a na zaklade tych skupin vyberieme akcie na tvorbu naivneho portfolia
