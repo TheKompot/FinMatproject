@@ -51,7 +51,7 @@ Na tvorbu drueho portfolia chceme pouzit umelu intelgenciu. Konkretne geneticky 
 * Jedinec: vektor vah pre nejake portfolio
 * Populacia: 100
 * Pocitanie fitness: 
-    * sharpe ratio
+    * **sharpe ratio**
     * druha mocnina vzdialenosti od predom urcenenej cielenej volatility a vynosu
 * k v k-point-crossover: este nevieme
 * sanca pre mutaciu: este nevieme
