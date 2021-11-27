@@ -46,12 +46,14 @@ Vyskusali sme pridat ohranicenie ze do 17 akcii ktore si najprv "vybral" model m
 
 ### Rozdelenie aktiv: Geneticky algoritmus:
 
-Na tvorbu drueho portfolia chceme pouzit umelu intelgenciu. Konkretne genetiky algoritmus.
+Na tvorbu drueho portfolia chceme pouzit umelu intelgenciu. Konkretne geneticky algoritmus.
 
-Jedinec: vektor vah pre nejake portfolio
-Populacia: 100
-Pocitanie fitness: este nevieme
-k v k-point-crossover: este nevieme
-sanca pre mutaciu: este nevieme
+* Jedinec: vektor vah pre nejake portfolio
+* Populacia: 100
+* Pocitanie fitness: 
+       * sharpe ratio
+       * druha mocnina vzdialenosti od predom urcenenej cielenej volatility a vynosu
+* k v k-point-crossover: este nevieme
+* sanca pre mutaciu: este nevieme
 
 Kedze musi platit ze &sum;w<sub>i</sub> = 1 tak po kazdej iteracii musime celu populaciu **normalizovat** .
