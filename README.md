@@ -44,6 +44,14 @@ Vyskusali sme pridat ohranicenie ze do 17 akcii ktore si najprv "vybral" model m
 * ak by sme neboli spokojny vytvorit ohranicenia na sektory (vyskusat aj pre vahy z intervalu 0,1)
 * otestovat portfolio na novych datach
 
-### Rozdelenie aktiv: Geneticky algoritmus/Neuronova siet:
+### Rozdelenie aktiv: Geneticky algoritmus:
 
-Na tvorbu drueho portfolia chceme pouzit umelu intelgenciu. Urcime si cieleny predpokladany vynos a volatilitu 
+Na tvorbu drueho portfolia chceme pouzit umelu intelgenciu. Konkretne genetiky algoritmus.
+
+Jedinec: vektor vah pre nejake portfolio
+Populacia: 100
+Pocitanie fitness: este nevieme
+k v k-point-crossover: este nevieme
+sanca pre mutaciu: este nevieme
+
+Kedze musi platit ze &sum;w<sub>i</sub> = 1 tak po kazdej iteracii musime celu populaciu **normalizovat** .
