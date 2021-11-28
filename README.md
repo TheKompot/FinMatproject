@@ -58,7 +58,6 @@ Kedze musi platit ze &sum;w<sub>i</sub> = 1 tak po kazdej iteracii musime celu p
 Moznych anditatov na benchmark sme vybrali S&P100, S&P500 a NASDAQ100. S&P pretoze z neho sme vyberali aktiva do jednotlivych portfolii.
 
 **TODO**
-* plotovat rozdelenie vah na sektory
 * vybrat parametre pre geneticky algoritmus
 * vybrat benchmark
 * vypocitat Sharpe ratio pomocou benchmarku

@@ -3,6 +3,7 @@ import datetime
 import pandas_datareader.data as web
 import matplotlib.pyplot as plt
 import numpy as np
+import plotly.express as px
 
 start = datetime.datetime(2021, 1, 1)
 end  = datetime.datetime(2021, 11, 1)
@@ -51,4 +52,22 @@ def validate(weights:np.array,axis:'plt.Axis',label:str):
     portfolio = portfolio.T
     portfolio = pd.DataFrame(portfolio.sum(axis=1))
     axis.plot(portfolio.index,portfolio[0],label=label)
+
+def plot_sectors(weights:np.array):
+    data_file = 'data/s&p100.xlsx'
+    sap100 = pd.read_excel(data_file)
+    wanted_stocks = ('GOOG', 'SPG', 'GOOGL', 'MSFT', 'GD', 'ACN', 'COP', 'F', 'BAC', 'GS',
+       'NVDA', 'AIG', 'MS', 'WFC', 'ORCL', 'XOM', 'TGT', 'LOW', 'EXC', 'COST',
+       'AXP', 'BK', 'JPM', 'COF', 'CSCO', 'DHR', 'UNH', 'CVS', 'LLY', 'CVX',
+       'MET', 'AMT', 'CRM', 'BLK', 'RTX', 'MCD', 'TMO', 'LIN', 'ADBE', 'EMR',
+       'USB', 'UPS', 'TSLA', 'PFE', 'PM')
+
+    sap100 = sap100[sap100['Symbol'].isin(wanted_stocks)]
+    
+    data = pd.DataFrame([weights,wanted_stocks]).T.rename(columns={1:'Symbol',0:'w'})
+
+    data_sectors = pd.DataFrame((data.merge(sap100,on='Symbol').groupby('Sector')['w'].sum())).reset_index()
+
+    fig = px.pie(data_sectors, values = 'w', names= 'Sector',title='% of capital by sector')
+    fig.show()
     
