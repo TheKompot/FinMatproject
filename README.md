@@ -39,11 +39,6 @@ Na tvorbu prveho portfolia sme pouzili markowitzov problem avsak formulovany ako
 
 Vyskusali sme pridat ohranicenie ze do 17 akcii ktore si najprv "vybral" model moze ist max 80% kapitalu, avsak pocet pouzitych akcii sa znizil 
 
-**TODO**
-* plotovat rozdelenie vah na sektory
-* ak by sme neboli spokojny vytvorit ohranicenia na sektory (vyskusat aj pre vahy z intervalu 0,1)
-* otestovat portfolio na novych datach
-
 ## Rozdelenie aktiv: Geneticky algoritmus:
 
 Na tvorbu drueho portfolia chceme pouzit umelu intelgenciu. Konkretne geneticky algoritmus.
@@ -61,3 +56,10 @@ Kedze musi platit ze &sum;w<sub>i</sub> = 1 tak po kazdej iteracii musime celu p
 ## Benchmark
 
 Moznych anditatov na benchmark sme vybrali S&P100, S&P500 a NASDAQ100. S&P pretoze z neho sme vyberali aktiva do jednotlivych portfolii.
+
+**TODO**
+* plotovat rozdelenie vah na sektory
+* vybrat parametre pre geneticky algoritmus
+* vybrat benchmark
+* vypocitat Sharpe ratio pomocou benchmarku
+* prejst do obchodovacej fazy
