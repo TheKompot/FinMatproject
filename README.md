@@ -55,7 +55,7 @@ Kedze musi platit ze &sum;w<sub>i</sub> = 1 tak po kazdej iteracii musime celu p
 
 ## Benchmark
 
-Moznych anditatov na benchmark sme vybrali S&P100, S&P500 a NASDAQ100. S&P pretoze z neho sme vyberali aktiva do jednotlivych portfolii.
+Moznych kanditatov na benchmark sme vybrali S&P100, S&P500 a NASDAQ100. S&P pretoze z neho sme vyberali aktiva do jednotlivych portfolii.
 
 **TODO**
 * plotovat rozdelenie vah na sektory
