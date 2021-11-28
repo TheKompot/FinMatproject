@@ -1,6 +1,8 @@
 import pandas as pd
 import datetime
 import pandas_datareader.data as web
+import matplotlib.pyplot as plt
+import numpy as np
 
 start = datetime.datetime(2021, 1, 1)
 end  = datetime.datetime(2021, 11, 1)
@@ -33,3 +35,20 @@ def getStocks(stock_list:list, start:datetime, end:datetime)->pd.DataFrame:
 
             
     return output.copy()
+
+def validate(weights:np.array,axis:'plt.Axis',label:str):
+    data = pd.read_csv('data/validation_data.csv', index_col=0, parse_dates=True)
+    stocks = data/data.shift(1)
+
+    balance = pd.Series(weights * 100000,index = data.columns)
+    portfolio = pd.DataFrame(balance)
+
+    for index,row in stocks.iloc[1:,:].iterrows():
+        new_balance = row * balance
+        portfolio = pd.concat([portfolio,new_balance],axis=1)
+        balance = new_balance
+    portfolio.columns = stocks.index
+    portfolio = portfolio.T
+    portfolio = pd.DataFrame(portfolio.sum(axis=1))
+    axis.plot(portfolio.index,portfolio[0],label=label)
+    
