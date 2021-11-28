@@ -1,6 +1,6 @@
 # Financna matematika projekt
 
-# Pripravna faza
+# I. Pripravna faza
 
 ## Hodnotenie portfolia FMFI
 
@@ -12,7 +12,7 @@ po analyze sme ziskali hodnoty
 **Rocny vynos: 5.85%** 
 **Rocna volatilita: 18.91%**
 
-### Vyberanie aktiv
+## Vyberanie aktiv
 
 Rozhodli sme sa vyberat z akcii na indexe S&P 100
 pouzili sme zoznam z  22. marca 2021
@@ -29,7 +29,7 @@ Rozdelenie vybratych aktiv podla sektorov:
 
 Kedze ziadny sektor nieje priliz dominantny tak sme boli spokojny s vyberom aktiv
 
-### Rozdelenie aktiv: Markowitz
+## Rozdelenie aktiv: Markowitz
 
 Na tvorbu prveho portfolia sme pouzili markowitzov problem avsak formulovany ako minimalizacia Sharpe ratio
 * kapital nam rozdelilo iba do 17 akcii
@@ -44,7 +44,7 @@ Vyskusali sme pridat ohranicenie ze do 17 akcii ktore si najprv "vybral" model m
 * ak by sme neboli spokojny vytvorit ohranicenia na sektory (vyskusat aj pre vahy z intervalu 0,1)
 * otestovat portfolio na novych datach
 
-### Rozdelenie aktiv: Geneticky algoritmus:
+## Rozdelenie aktiv: Geneticky algoritmus:
 
 Na tvorbu drueho portfolia chceme pouzit umelu intelgenciu. Konkretne geneticky algoritmus.
 
@@ -57,3 +57,7 @@ Na tvorbu drueho portfolia chceme pouzit umelu intelgenciu. Konkretne geneticky 
 * sanca pre mutaciu: este nevieme
 
 Kedze musi platit ze &sum;w<sub>i</sub> = 1 tak po kazdej iteracii musime celu populaciu **normalizovat** .
+
+## Benchmark
+
+Moznych anditatov na benchmark sme vybrali S&P100, S&P500 a NASDAQ100. S&P pretoze z neho sme vyberali aktiva do jednotlivych portfolii a NASDAQ100 lebo akiva sme vyberali akcie z indexu ktory mal tiez 100 aktiv a NASDAQ je popularny index.
