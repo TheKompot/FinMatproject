@@ -59,7 +59,16 @@ Kedze musi platit ze &sum;w<sub>i</sub> = 1 tak po kazdej iteracii musime celu p
 
 Moznych kanditatov na benchmark sme vybrali S&P100, S&P500 a NASDAQ100. S&P pretoze z neho sme vyberali aktiva do jednotlivych portfolii.
 
+|    corr    | S&P100    | S&P500  |  NASDAQ100 |
+| :---       |    :----: |  :---:  | ---:       |
+| Markowitz  | 0.8429    | 0.8864  | 0.6435     |
+| GenAlg     | 0.8465    | 0.8839  | 0.6335     |
+
+Na zaklade korelacii sme vybrali ako benchmark **S&P500**
+
+
 **TODO**
-* vybrat benchmark
 * vypocitat Sharpe ratio pomocou benchmarku
 * prejst do obchodovacej fazy
+
+# II. Obchodovacia faza
