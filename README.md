@@ -48,8 +48,10 @@ Na tvorbu drueho portfolia chceme pouzit umelu intelgenciu. Konkretne geneticky 
 * Pocitanie fitness: 
     * **sharpe ratio**
     * druha mocnina vzdialenosti od predom urcenenej cielenej volatility a vynosu
-* k v k-point-crossover: este nevieme
-* sanca pre mutaciu: este nevieme
+* k v k-point-crossover: 10
+    * ak bolo k > 5 tak bolo celkom jedno ake zvolime
+* sanca pre mutaciu: 0.01
+  * mala mutacia bola dobra nie avsak nulova
 
 Kedze musi platit ze &sum;w<sub>i</sub> = 1 tak po kazdej iteracii musime celu populaciu **normalizovat** .
 
@@ -58,7 +60,6 @@ Kedze musi platit ze &sum;w<sub>i</sub> = 1 tak po kazdej iteracii musime celu p
 Moznych kanditatov na benchmark sme vybrali S&P100, S&P500 a NASDAQ100. S&P pretoze z neho sme vyberali aktiva do jednotlivych portfolii.
 
 **TODO**
-* vybrat parametre pre geneticky algoritmus
 * vybrat benchmark
 * vypocitat Sharpe ratio pomocou benchmarku
 * prejst do obchodovacej fazy
