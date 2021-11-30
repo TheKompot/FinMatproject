@@ -4,6 +4,7 @@ import pandas_datareader.data as web
 import matplotlib.pyplot as plt
 import numpy as np
 import plotly.express as px
+import plotly.graph_objects as go
 
 start = datetime.datetime(2021, 1, 1)
 end  = datetime.datetime(2021, 11, 1)
@@ -69,5 +70,36 @@ def plot_sectors(weights:np.array):
     data_sectors = pd.DataFrame((data.merge(sap100,on='Symbol').groupby('Sector')['w'].sum())).reset_index()
 
     fig = px.pie(data_sectors, values = 'w', names= 'Sector',title='% of capital by sector')
+    fig.show()
+
+def custom_plot(x,y1,y2,x_title,y1_title,y2_title):
+    fig = go.Figure()
+#mutation prob = 0.1, pop size 100
+    fig.add_trace(go.Scatter(x=x, y=y1, name=y1_title, yaxis="y1"))
+    fig.add_trace(go.Scatter(x=x, y=y2, name=y2_title, yaxis="y2"))
+    fig.update_layout(
+        xaxis=dict(title=x_title),
+        yaxis=dict(
+            title=y1_title,
+            titlefont=dict(
+                color="#1f77b4"
+            ),
+            tickfont=dict(
+                color="#1f77b4"
+            )
+        ),
+        yaxis2=dict(
+            title=y2_title,
+            titlefont=dict(
+                color="red"
+            ),
+            tickfont=dict(
+                color="red"
+            ),
+            anchor="free",
+            overlaying="y",
+            side="right",
+            position=1
+        ))
     fig.show()
     
