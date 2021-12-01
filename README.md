@@ -39,7 +39,7 @@ Na tvorbu prveho portfolia sme pouzili markowitzov problem avsak formulovany ako
 
 Vyskusali sme pridat ohranicenie ze do 17 akcii ktore si najprv "vybral" model moze ist max 80% kapitalu, avsak pocet pouzitych akcii sa znizil 
 
-## Rozdelenie aktiv: Geneticky algoritmus:
+## Rozdelenie aktiv: Geneticky algoritmus
 
 Na tvorbu drueho portfolia chceme pouzit umelu intelgenciu. Konkretne geneticky algoritmus.
 
@@ -66,9 +66,10 @@ Moznych kanditatov na benchmark sme vybrali S&P100, S&P500 a NASDAQ100. S&P pret
 
 Na zaklade korelacii sme vybrali ako benchmark **S&P500**
 
+## Sharp ratio
 
-**TODO**
-* vypocitat Sharpe ratio pomocou benchmarku
-* prejst do obchodovacej fazy
-
+* Markowitz : 0.553768036184104 - 0.273886 / 0.12499518714208688 = **2.23914250287054**
+* GenAlg    : 0.5221685528589605- 0.273886 / 0.12175833412469572 = **2.039142163399576**  
 # II. Obchodovacia faza
+
+nakupili sme akcie 1.12.2021
