@@ -73,3 +73,14 @@ Na zaklade korelacii sme vybrali ako benchmark **S&P500**
 # II. Obchodovacia faza
 
 nakupili sme akcie 1.12.2021
+
+12.12. - rebalansovanie GenAlg portfolia
+Na zaciatku sme do jednotlivych sektorov investovali niekolko % fin. prostriedkov. Teraz sme porovnali ako sa tieto % zmenili a rozhodli sme sa predat a nakupit akcie tak, aby sa zachovali percenta jednotlivych sektorov ako na zaciatku.
+Pozorovanie sektorov, ktore mali narast/pokles viac ako 0.5%:
+Technology: +0.757
+Healtcare: -0.796
+Real Estate: -0.123
+V sektore Technology, prudko vzrastli akcie ORCL -> predaj 8 ks akcii (zisk 11.89 za akciu)
+V sektore Healthcare, poklesli ceny LLY a PFE -> nakup 2 ks a 4 ks akcii
+V sektore Real Estate, poklesli ceny SPG -> nakup 1 ks akcie
+Tabulky v subore rebalansovanie.
